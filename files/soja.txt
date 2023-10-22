@@ -1,0 +1,2 @@
+567;SOJA EM GRÃOS INTECTA;true;55;primeira caracteristica;true
+678;SOJA CONVENCIONAL;false;44;segunda caracteristica;false
