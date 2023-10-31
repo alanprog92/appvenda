@@ -1,23 +1,26 @@
 package br.edu.infnet.appvenda.model.service;
 
 import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import br.edu.infnet.appvenda.model.domain.Feijao;
+import br.edu.infnet.appvenda.repository.FeijaoRepository;
 
 @Service
 public class FeijaoService {
 
-	private Map<Integer, Feijao> mapaFeijao = new HashMap<Integer, Feijao>();
-
+	@Autowired
+	FeijaoRepository feijaoRepository;
+	
 	public void incluir(Feijao Feijao) {
-		mapaFeijao.put(Feijao.getCodigo(), Feijao);
+		
+		feijaoRepository.save(Feijao);
+		
 	}
 	
 	public Collection<Feijao> obterLista(){	
-		return mapaFeijao.values();
+		return (Collection<Feijao>) feijaoRepository.findAll();
 	}
 }
