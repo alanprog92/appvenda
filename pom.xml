@@ -12,12 +12,23 @@
 	<groupId>br.edu.infnet</groupId>
 	<artifactId>apppedido</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>apppedido</name>
+	<name>appsilo</name>
 	<description>Projeto de gestão de pedidos</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
 	<dependencies>
+	
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-openfeign</artifactId>
+			<version>3.1.8</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.hibernate.validator</groupId>
+			<artifactId>hibernate-validator</artifactId>
+		</dependency>	
 		
 			<!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
 		<dependency>

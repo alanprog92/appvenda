@@ -1,4 +1,4 @@
-package br.edu.infnet.appvenda.repository;
+package br.edu.infnet.appvenda.model.repository;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;

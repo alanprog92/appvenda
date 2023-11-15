@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import br.edu.infnet.appvenda.model.domain.Soja;
-import br.edu.infnet.appvenda.repository.SojaRepository;
+import br.edu.infnet.appvenda.model.repository.SojaRepository;
 
 @Service
 public class SojaService {
